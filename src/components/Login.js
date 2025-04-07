@@ -11,40 +11,21 @@ const Login = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        if (!username.trim()) {
-            setError('Please enter a username');
-            return;
-        }
-
-        try {
-            // Check if admin credentials are correct
-            if (role === 'admin') {
-                if (username !== 'admin123') {
-                    setError('Invalid admin credentials');
-                    return;
-                }
-                navigate('/admin');
-            } else {
-                // For players, create/update player record
-                const playerRef = ref(db, `players/${username}`);
-                const snapshot = await get(playerRef);
-
-                if (!snapshot.exists()) {
-                    // If player doesn't exist, initialize their score
-                    await set(playerRef, {
-                        score: 0,
-                        completedQuestions: [],
-                        timestamp: Date.now()
-                    });
-                }
-
-                // Store username in sessionStorage
-                sessionStorage.setItem('currentPlayer', username);
-                navigate('/quiz');
+        if (username && role) {
+            try {
+                const userRef = ref(db, `users/${username}`);
+                await set(userRef, {
+                    username,
+                    role,
+                    score: 0,
+                    completedQuestions: [],
+                    isPlaying: false
+                });
+                navigate('/#/quiz');
+            } catch (error) {
+                console.error('Error logging in:', error);
+                setError('Đã có lỗi xảy ra. Vui lòng thử lại.');
             }
-        } catch (error) {
-            setError('Error logging in. Please try again.');
-            console.error(error);
         }
     };
 

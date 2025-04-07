@@ -195,40 +195,19 @@ const Quiz = () => {
         }
     };
 
-    const handleRetry = async () => {
-        const playerRef = ref(db, `players/${username}`);
-        try {
-            await set(playerRef, {
-                score: 0,
-                completedQuestions: [],
-                currentQuestion: 1,
-                isPlaying: true,
-                timestamp: Date.now(),
-                stories: {}
-            });
-
-            // Select new random questions
-            const allQuestions = questionsData.questions;
-            const shuffledQuestions = [...allQuestions].sort(() => Math.random() - 0.5);
-            const selectedQuestions = shuffledQuestions.slice(0, 10);
-            setQuestions(selectedQuestions);
-
-            setCurrentQuestion(0);
-            setScore(0);
-            setShowScore(false);
-            setShowStoryInput(false);
-            setStory('');
-            setCurrentQuestionId(null);
-            setTimeLeft(15);
-            setTimerActive(true);
-        } catch (error) {
-            console.error('Error resetting player status:', error);
-        }
+    const handleRetry = () => {
+        setCurrentQuestion(0);
+        setScore(0);
+        setShowScore(false);
+        setShowStoryInput(false);
+        setTimeLeft(20);
+        setTimerActive(true);
+        navigate('/#/quiz');
     };
 
     const handleLogout = () => {
         sessionStorage.removeItem('currentPlayer');
-        navigate('/');
+        navigate('/#/');
     };
 
     if (!username || questions.length === 0) {
