@@ -1,0 +1,234 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Ai là tác giả của tác phẩm 'Truyện Kiều'?",
+            "options": [
+                "Nguyễn Du",
+                "Hồ Xuân Hương",
+                "Nguyễn Trãi",
+                "Nguyễn Bỉnh Khiêm"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://bcp.cdnchinhphu.vn/Uploaded/buianhtho/2015_11_12/doc-rap-truyen-kieu-gay-sot-tren-mang-01.jpg"
+        },
+        {
+            "id": 2,
+            "question": "Tác phẩm 'Chí Phèo' là của nhà văn nào?",
+            "options": [
+                "Nam Cao",
+                "Vũ Trọng Phụng",
+                "Ngô Tất Tố",
+                "Nguyên Hồng"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://bcp.cdnchinhphu.vn/Uploaded/buianhtho/2015_11_12/doc-rap-truyen-kieu-gay-sot-tren-mang-01.jpg"
+        },
+        {
+            "id": 3,
+            "question": "Ai là tác giả của bài thơ 'Đây thôn Vĩ Dạ'?",
+            "options": [
+                "Hàn Mặc Tử",
+                "Xuân Diệu",
+                "Huy Cận",
+                "Tố Hữu"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://bcp.cdnchinhphu.vn/Uploaded/buianhtho/2015_11_12/doc-rap-truyen-kieu-gay-sot-tren-mang-01.jpg"
+        },
+        {
+            "id": 4,
+            "question": "Tác phẩm 'Số đỏ' là của nhà văn nào?",
+            "options": [
+                "Vũ Trọng Phụng",
+                "Nam Cao",
+                "Ngô Tất Tố",
+                "Nguyên Hồng"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Vu_Trong_Phung.jpg/220px-Vu_Trong_Phung.jpg"
+        },
+        {
+            "id": 5,
+            "question": "Ai là tác giả của bài thơ 'Từ ấy'?",
+            "options": [
+                "Tố Hữu",
+                "Xuân Diệu",
+                "Huy Cận",
+                "Hàn Mặc Tử"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/3/3c/To_Huu.jpg/220px-To_Huu.jpg"
+        },
+        {
+            "id": 6,
+            "question": "Tác phẩm 'Tắt đèn' là của nhà văn nào?",
+            "options": [
+                "Ngô Tất Tố",
+                "Nam Cao",
+                "Vũ Trọng Phụng",
+                "Nguyên Hồng"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2c/Ngo_Tat_To.jpg/220px-Ngo_Tat_To.jpg"
+        },
+        {
+            "id": 7,
+            "question": "Ai là tác giả của bài thơ 'Vội vàng'?",
+            "options": [
+                "Xuân Diệu",
+                "Huy Cận",
+                "Hàn Mặc Tử",
+                "Tố Hữu"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/4c/Xuan_Dieu.jpg/220px-Xuan_Dieu.jpg"
+        },
+        {
+            "id": 8,
+            "question": "Tác phẩm 'Bỉ vỏ' là của nhà văn nào?",
+            "options": [
+                "Nguyên Hồng",
+                "Nam Cao",
+                "Vũ Trọng Phụng",
+                "Ngô Tất Tố"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Nguyen_Hong.jpg/220px-Nguyen_Hong.jpg"
+        },
+        {
+            "id": 9,
+            "question": "Ai là tác giả của bài thơ 'Tràng giang'?",
+            "options": [
+                "Huy Cận",
+                "Xuân Diệu",
+                "Hàn Mặc Tử",
+                "Tố Hữu"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2c/Huy_Can.jpg/220px-Huy_Can.jpg"
+        },
+        {
+            "id": 10,
+            "question": "Tác phẩm 'Lão Hạc' là của nhà văn nào?",
+            "options": [
+                "Nam Cao",
+                "Vũ Trọng Phụng",
+                "Ngô Tất Tố",
+                "Nguyên Hồng"
+            ],
+            "correctAnswer": 0,
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/4c/Nam_Cao.jpg/220px-Nam_Cao.jpg"
+        },
+        {
+            "id": 11,
+            "question": "What is the largest mammal in the world?",
+            "options": [
+                "African Elephant",
+                "Blue Whale",
+                "Giraffe",
+                "Polar Bear"
+            ],
+            "correctAnswer": "Blue Whale"
+        },
+        {
+            "id": 12,
+            "question": "Who is known as the father of computers?",
+            "options": [
+                "Bill Gates",
+                "Steve Jobs",
+                "Charles Babbage",
+                "Alan Turing"
+            ],
+            "correctAnswer": "Charles Babbage"
+        },
+        {
+            "id": 13,
+            "question": "What is the currency of Japan?",
+            "options": [
+                "Yuan",
+                "Won",
+                "Yen",
+                "Ringgit"
+            ],
+            "correctAnswer": "Yen"
+        },
+        {
+            "id": 14,
+            "question": "Which planet is closest to the Sun?",
+            "options": [
+                "Venus",
+                "Mercury",
+                "Earth",
+                "Mars"
+            ],
+            "correctAnswer": "Mercury"
+        },
+        {
+            "id": 15,
+            "question": "What is the largest bone in the human body?",
+            "options": [
+                "Femur",
+                "Tibia",
+                "Humerus",
+                "Skull"
+            ],
+            "correctAnswer": "Femur"
+        },
+        {
+            "id": 16,
+            "question": "Who discovered gravity?",
+            "options": [
+                "Albert Einstein",
+                "Isaac Newton",
+                "Galileo Galilei",
+                "Nikola Tesla"
+            ],
+            "correctAnswer": "Isaac Newton"
+        },
+        {
+            "id": 17,
+            "question": "What is the capital of Canada?",
+            "options": [
+                "Toronto",
+                "Vancouver",
+                "Ottawa",
+                "Montreal"
+            ],
+            "correctAnswer": "Ottawa"
+        },
+        {
+            "id": 18,
+            "question": "Which animal is known as the 'King of the Jungle'?",
+            "options": [
+                "Tiger",
+                "Lion",
+                "Elephant",
+                "Gorilla"
+            ],
+            "correctAnswer": "Lion"
+        },
+        {
+            "id": 19,
+            "question": "What is the largest desert in the world?",
+            "options": [
+                "Sahara",
+                "Gobi",
+                "Arabian",
+                "Antarctic"
+            ],
+            "correctAnswer": "Antarctic"
+        },
+        {
+            "id": 20,
+            "question": "Who is the author of 'Harry Potter' series?",
+            "options": [
+                "J.R.R. Tolkien",
+                "J.K. Rowling",
+                "George R.R. Martin",
+                "Stephen King"
+            ],
+            "correctAnswer": "J.K. Rowling"
+        }
+    ]
+}
