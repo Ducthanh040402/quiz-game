@@ -2,233 +2,223 @@
     "questions": [
         {
             "id": 1,
-            "question": "Ai là tác giả của tác phẩm 'Truyện Kiều'?",
+            "question": "Ai là đạo diễn của bộ phim 'Khó Dỗ Dành' phiên bản Trung Quốc 2025?",
             "options": [
-                "Nguyễn Du",
-                "Hồ Xuân Hương",
-                "Nguyễn Trãi",
-                "Nguyễn Bỉnh Khiêm"
+                "Cù Hữu Ninh",
+                "Trần Khải Ca",
+                "Phùng Tiểu Cương",
+                "Vương Gia Vệ"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://bcp.cdnchinhphu.vn/Uploaded/buianhtho/2015_11_12/doc-rap-truyen-kieu-gay-sot-tren-mang-01.jpg"
+            "correctAnswer": "Cù Hữu Ninh"
         },
         {
             "id": 2,
-            "question": "Tác phẩm 'Chí Phèo' là của nhà văn nào?",
+            "question": "Ai đóng vai chính nam trong phim?",
             "options": [
-                "Nam Cao",
-                "Vũ Trọng Phụng",
-                "Ngô Tất Tố",
-                "Nguyên Hồng"
+                "Bạch Kính Đình",
+                "Chương Nhược Nam",
+                "Lưu Sở Thiên",
+                "Mã Bá Kiên"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://bcp.cdnchinhphu.vn/Uploaded/buianhtho/2015_11_12/doc-rap-truyen-kieu-gay-sot-tren-mang-01.jpg"
+            "correctAnswer": "Bạch Kính Đình"
         },
         {
             "id": 3,
-            "question": "Ai là tác giả của bài thơ 'Đây thôn Vĩ Dạ'?",
+            "question": "Ai đóng vai chính nữ trong phim?",
             "options": [
-                "Hàn Mặc Tử",
-                "Xuân Diệu",
-                "Huy Cận",
-                "Tố Hữu"
+                "Chương Nhược Nam",
+                "Bạch Kính Đình",
+                "Lưu Sở Thiên",
+                "Mã Bá Kiên"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://bcp.cdnchinhphu.vn/Uploaded/buianhtho/2015_11_12/doc-rap-truyen-kieu-gay-sot-tren-mang-01.jpg"
+            "correctAnswer": "Chương Nhược Nam"
         },
         {
             "id": 4,
-            "question": "Tác phẩm 'Số đỏ' là của nhà văn nào?",
+            "question": "Bộ phim được sản xuất bởi hãng phim nào?",
             "options": [
-                "Vũ Trọng Phụng",
-                "Nam Cao",
-                "Ngô Tất Tố",
-                "Nguyên Hồng"
+                "Youku",
+                "Tencent",
+                "iQiyi",
+                "Mango TV"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Vu_Trong_Phung.jpg/220px-Vu_Trong_Phung.jpg"
+            "correctAnswer": "Youku"
         },
         {
             "id": 5,
-            "question": "Ai là tác giả của bài thơ 'Từ ấy'?",
+            "question": "Bộ phim được quay ở những địa điểm nào?",
             "options": [
-                "Tố Hữu",
-                "Xuân Diệu",
-                "Huy Cận",
-                "Hàn Mặc Tử"
+                "Hồng Kông, Trùng Khánh",
+                "Bắc Kinh, Thượng Hải",
+                "Hàng Châu, Quảng Châu",
+                "Thâm Quyến, Nam Kinh"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/3/3c/To_Huu.jpg/220px-To_Huu.jpg"
+            "correctAnswer": "Hồng Kông, Trùng Khánh"
         },
         {
             "id": 6,
-            "question": "Tác phẩm 'Tắt đèn' là của nhà văn nào?",
+            "question": "Bộ phim có bao nhiêu tập?",
             "options": [
-                "Ngô Tất Tố",
-                "Nam Cao",
-                "Vũ Trọng Phụng",
-                "Nguyên Hồng"
+                "32 tập",
+                "24 tập",
+                "40 tập",
+                "16 tập"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2c/Ngo_Tat_To.jpg/220px-Ngo_Tat_To.jpg"
+            "correctAnswer": "32 tập"
         },
         {
             "id": 7,
-            "question": "Ai là tác giả của bài thơ 'Vội vàng'?",
+            "question": "Nhạc dạo của phim là bài hát nào?",
             "options": [
-                "Xuân Diệu",
-                "Huy Cận",
-                "Hàn Mặc Tử",
-                "Tố Hữu"
+                "Willful",
+                "Everything",
+                "The Invisible Man",
+                "Like A Sunny Day"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/4c/Xuan_Dieu.jpg/220px-Xuan_Dieu.jpg"
+            "correctAnswer": "Willful"
         },
         {
             "id": 8,
-            "question": "Tác phẩm 'Bỉ vỏ' là của nhà văn nào?",
+            "question": "Ai là ca sĩ thể hiện nhạc dạo của phim?",
             "options": [
-                "Nguyên Hồng",
-                "Nam Cao",
-                "Vũ Trọng Phụng",
-                "Ngô Tất Tố"
+                "Mayday",
+                "Mao Buyi",
+                "Li Yuchun",
+                "Silence Wang"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/5/5c/Nguyen_Hong.jpg/220px-Nguyen_Hong.jpg"
+            "correctAnswer": "Mayday"
         },
         {
             "id": 9,
-            "question": "Ai là tác giả của bài thơ 'Tràng giang'?",
+            "question": "Bộ phim thuộc thể loại nào?",
             "options": [
-                "Huy Cận",
-                "Xuân Diệu",
-                "Hàn Mặc Tử",
-                "Tố Hữu"
+                "Ngôn tình, Thanh xuân, Đời thường",
+                "Hành động, Phiêu lưu",
+                "Kinh dị, Tâm lý",
+                "Hài hước, Gia đình"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/2/2c/Huy_Can.jpg/220px-Huy_Can.jpg"
+            "correctAnswer": "Ngôn tình, Thanh xuân, Đời thường"
         },
         {
             "id": 10,
-            "question": "Tác phẩm 'Lão Hạc' là của nhà văn nào?",
+            "question": "Bộ phim được phát hành vào năm nào?",
             "options": [
-                "Nam Cao",
-                "Vũ Trọng Phụng",
-                "Ngô Tất Tố",
-                "Nguyên Hồng"
+                "2025",
+                "2024",
+                "2023",
+                "2026"
             ],
-            "correctAnswer": 0,
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/vi/thumb/4/4c/Nam_Cao.jpg/220px-Nam_Cao.jpg"
+            "correctAnswer": "2025"
         },
         {
             "id": 11,
-            "question": "What is the largest mammal in the world?",
+            "question": "Bộ phim là spin-off của bộ phim nào?",
             "options": [
-                "African Elephant",
-                "Blue Whale",
-                "Giraffe",
-                "Polar Bear"
+                "Hidden Love",
+                "The First Frost",
+                "Willful",
+                "Everything"
             ],
-            "correctAnswer": "Blue Whale"
+            "correctAnswer": "Hidden Love"
         },
         {
             "id": 12,
-            "question": "Who is known as the father of computers?",
+            "question": "Ai là nhà sản xuất của bộ phim?",
             "options": [
-                "Bill Gates",
-                "Steve Jobs",
-                "Charles Babbage",
-                "Alan Turing"
+                "Long Danni",
+                "Cù Hữu Ninh",
+                "Bạch Kính Đình",
+                "Chương Nhược Nam"
             ],
-            "correctAnswer": "Charles Babbage"
+            "correctAnswer": "Long Danni"
         },
         {
             "id": 13,
-            "question": "What is the currency of Japan?",
+            "question": "Bộ phim được chuyển thể từ tiểu thuyết của ai?",
             "options": [
-                "Yuan",
-                "Won",
-                "Yen",
-                "Ringgit"
+                "Trúc Dĩ",
+                "Mạc Ngôn",
+                "Dư Hoa",
+                "Lỗ Tấn"
             ],
-            "correctAnswer": "Yen"
+            "correctAnswer": "Trúc Dĩ"
         },
         {
             "id": 14,
-            "question": "Which planet is closest to the Sun?",
+            "question": "Bộ phim được quay bằng ngôn ngữ nào?",
             "options": [
-                "Venus",
-                "Mercury",
-                "Earth",
-                "Mars"
+                "Tiếng Trung",
+                "Tiếng Anh",
+                "Tiếng Quảng Đông",
+                "Tiếng Việt"
             ],
-            "correctAnswer": "Mercury"
+            "correctAnswer": "Tiếng Trung"
         },
         {
             "id": 15,
-            "question": "What is the largest bone in the human body?",
+            "question": "Bộ phim có bao nhiêu mùa?",
             "options": [
-                "Femur",
-                "Tibia",
-                "Humerus",
-                "Skull"
+                "1 mùa",
+                "2 mùa",
+                "3 mùa",
+                "4 mùa"
             ],
-            "correctAnswer": "Femur"
+            "correctAnswer": "1 mùa"
         },
         {
             "id": 16,
-            "question": "Who discovered gravity?",
+            "question": "Bài hát 'Everything' được thể hiện bởi ai?",
             "options": [
-                "Albert Einstein",
-                "Isaac Newton",
-                "Galileo Galilei",
-                "Nikola Tesla"
+                "Chương Nhược Nam & Trương Miêu Di",
+                "Bạch Kính Đình",
+                "Mao Buyi",
+                "Mayday"
             ],
-            "correctAnswer": "Isaac Newton"
+            "correctAnswer": "Chương Nhược Nam & Trương Miêu Di"
         },
         {
             "id": 17,
-            "question": "What is the capital of Canada?",
+            "question": "Bài hát 'The Invisible Man' được thể hiện bởi ai?",
             "options": [
-                "Toronto",
-                "Vancouver",
-                "Ottawa",
-                "Montreal"
+                "Bạch Kính Đình",
+                "Chương Nhược Nam",
+                "Mao Buyi",
+                "Mayday"
             ],
-            "correctAnswer": "Ottawa"
+            "correctAnswer": "Bạch Kính Đình"
         },
         {
             "id": 18,
-            "question": "Which animal is known as the 'King of the Jungle'?",
+            "question": "Bài hát 'Like A Sunny Day, Like A Rainy Day' được thể hiện bởi ai?",
             "options": [
-                "Tiger",
-                "Lion",
-                "Elephant",
-                "Gorilla"
+                "Silence Wang",
+                "Bạch Kính Đình",
+                "Mao Buyi",
+                "Mayday"
             ],
-            "correctAnswer": "Lion"
+            "correctAnswer": "Silence Wang"
         },
         {
             "id": 19,
-            "question": "What is the largest desert in the world?",
+            "question": "Bài hát 'It's You' được thể hiện bởi ai?",
             "options": [
-                "Sahara",
-                "Gobi",
-                "Arabian",
-                "Antarctic"
+                "Li Yuchun",
+                "Bạch Kính Đình",
+                "Mao Buyi",
+                "Mayday"
             ],
-            "correctAnswer": "Antarctic"
+            "correctAnswer": "Li Yuchun"
         },
         {
             "id": 20,
-            "question": "Who is the author of 'Harry Potter' series?",
+            "question": "Bộ phim được phát sóng trên nền tảng nào?",
             "options": [
-                "J.R.R. Tolkien",
-                "J.K. Rowling",
-                "George R.R. Martin",
-                "Stephen King"
+                "Youku",
+                "Tencent",
+                "iQiyi",
+                "Mango TV"
             ],
-            "correctAnswer": "J.K. Rowling"
+            "correctAnswer": "Youku"
         }
     ]
 }

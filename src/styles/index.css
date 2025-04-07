@@ -2,4 +2,21 @@
 @import './login.css';
 @import './quiz.css';
 @import './admin.css';
-@import './weather.css'; 
+@import './weather.css';
+
+/* Tree3D styles */
+.tree-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tree-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+} 

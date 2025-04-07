@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { db, ref, onValue } from './firebase';
 import '../styles/index.css';
+import Tree3D from './Tree3D';
 
 const Admin = () => {
     const [players, setPlayers] = useState([]);

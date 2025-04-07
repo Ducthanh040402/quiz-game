@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { db, ref, set, get } from './firebase';
 import WeatherEffect from './WeatherEffect';
+import Tree3D from './Tree3D';
 import '../styles/index.css';
 import questionsData from '../data/questions.json';
 
@@ -48,7 +49,7 @@ const Quiz = () => {
             // Select random questions
             const allQuestions = questionsData.questions;
             const shuffledQuestions = [...allQuestions].sort(() => Math.random() - 0.5);
-            const selectedQuestions = shuffledQuestions.slice(0, 10);
+            const selectedQuestions = shuffledQuestions.slice(0, 5);
             setQuestions(selectedQuestions);
         } catch (error) {
             console.error('Error parsing player data:', error);
@@ -223,83 +224,95 @@ const Quiz = () => {
 
     return (
         <div className="container">
-            {showWeatherEffect && <WeatherEffect type={showWeatherEffect} />}
             <div className="quiz-container fade-in">
                 <div className="quiz-header">
-                    <span>Question {currentQuestion + 1}/{questions.length}</span>
-                    <div className="timer-container">
-                        <div className="timer-text">
-                            <span>Time Left: </span>
-                            <span className={timeLeft <= 5 ? 'time-warning' : ''}>{timeLeft}s</span>
-                        </div>
-                        <div className="timer-progress">
-                            <div
-                                className={`timer-progress-bar ${timeLeft <= 5 ? 'warning' : ''}`}
-                                style={{ width: `${(timeLeft / 15) * 100}%` }}
-                            />
-                        </div>
+                    <h1>Quiz Game</h1>
+                    <div className="player-info">
+                        <span>Player: {username}</span>
+                        <span>Score: {score}</span>
                     </div>
-                    <span>Score: {score}</span>
                 </div>
 
-                {showScore ? (
-                    <div className="quiz-score">
-                        <h2>Quiz Completed!</h2>
-                        <p>You scored {score} out of {questions.length}</p>
-                        <div className="quiz-actions">
-                            <button onClick={handleRetry} className="btn btn-primary">
-                                Try Again
-                            </button>
-                            <button onClick={handleLogout} className="btn btn-secondary">
-                                Logout
-                            </button>
-                        </div>
-                    </div>
-                ) : showStoryInput ? (
-                    <div className="story-input">
-                        <h2>Oops! {timeLeft === 0 ? "Time's up!" : "That's not correct."}</h2>
-                        <p>Please share a short story or experience related to this question:</p>
-                        <form onSubmit={handleStorySubmit}>
-                            <textarea
-                                value={story}
-                                onChange={(e) => setStory(e.target.value)}
-                                placeholder="Share your story here..."
-                                className="story-textarea"
-                                required
-                            />
-                            <button type="submit" className="btn btn-primary">
-                                Submit Story
-                            </button>
-                        </form>
-                    </div>
-                ) : (
-                    <>
-                        <div className="quiz-question">
-                            <div className={`question-image-container ${isRevealComplete ? 'reveal-complete' : ''}`}>
-                                <img
-                                    src={questions[currentQuestion].imageUrl}
-                                    alt="Gợi ý câu hỏi"
-                                    className={`question-image ${imageRevealClass}`}
-                                    onError={(e) => {
-                                        e.target.src = 'https://via.placeholder.com/300x200?text=No+Image';
-                                    }}
+                {/* <Tree3D score={score} /> */}
+
+                {showWeatherEffect && <WeatherEffect type={showWeatherEffect} />}
+                <div className="quiz-container fade-in">
+                    <div className="quiz-header">
+                        <span>Question {currentQuestion + 1}/{questions.length}</span>
+                        <div className="timer-container">
+                            <div className="timer-text">
+                                <span>Time Left: </span>
+                                <span className={timeLeft <= 5 ? 'time-warning' : ''}>{timeLeft}s</span>
+                            </div>
+                            <div className="timer-progress">
+                                <div
+                                    className={`timer-progress-bar ${timeLeft <= 5 ? 'warning' : ''}`}
+                                    style={{ width: `${(timeLeft / 15) * 100}%` }}
                                 />
                             </div>
-                            <h2 className="question-text">{questions[currentQuestion].question}</h2>
                         </div>
-                        <div className="quiz-options">
-                            {questions[currentQuestion].options.map((option, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => handleAnswerClick(option)}
-                                    className="option-button"
-                                >
-                                    {option}
+                        <span>Score: {score}</span>
+                    </div>
+
+                    {showScore ? (
+                        <div className="quiz-score">
+                            <h2>Quiz Completed!</h2>
+                            <p>You scored {score} out of {questions.length}</p>
+                            <div className="quiz-actions">
+                                <button onClick={handleRetry} className="btn btn-primary">
+                                    Try Again
                                 </button>
-                            ))}
+                                <button onClick={handleLogout} className="btn btn-secondary">
+                                    Logout
+                                </button>
+                            </div>
                         </div>
-                    </>
-                )}
+                    ) : showStoryInput ? (
+                        <div className="story-input">
+                            <h2>Oops! {timeLeft === 0 ? "Time's up!" : "That's not correct."}</h2>
+                            <p>Please share a short story or experience related to this question:</p>
+                            <form onSubmit={handleStorySubmit}>
+                                <textarea
+                                    value={story}
+                                    onChange={(e) => setStory(e.target.value)}
+                                    placeholder="Share your story here..."
+                                    className="story-textarea"
+                                    required
+                                />
+                                <button type="submit" className="btn btn-primary">
+                                    Submit Story
+                                </button>
+                            </form>
+                        </div>
+                    ) : (
+                        <>
+                            <div className="quiz-question">
+                                <div className={`question-image-container ${isRevealComplete ? 'reveal-complete' : ''}`}>
+                                    <img
+                                        src={questions[currentQuestion].imageUrl}
+                                        alt="Gợi ý câu hỏi"
+                                        className={`question-image ${imageRevealClass}`}
+                                        onError={(e) => {
+                                            e.target.src = 'https://via.placeholder.com/300x200?text=No+Image';
+                                        }}
+                                    />
+                                </div>
+                                <h2 className="question-text">{questions[currentQuestion].question}</h2>
+                            </div>
+                            <div className="quiz-options">
+                                {questions[currentQuestion].options.map((option, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => handleAnswerClick(option)}
+                                        className="option-button"
+                                    >
+                                        {option}
+                                    </button>
+                                ))}
+                            </div>
+                        </>
+                    )}
+                </div>
             </div>
         </div>
     );
