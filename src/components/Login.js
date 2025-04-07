@@ -13,6 +13,12 @@ const Login = () => {
         e.preventDefault();
         if (username && role) {
             try {
+                // Kiểm tra thông tin đăng nhập admin
+                if (role === 'admin' && username !== 'admin123') {
+                    setError('Bạn không phải admin');
+                    return;
+                }
+
                 const userRef = ref(db, `users/${username}`);
                 await set(userRef, {
                     username,
@@ -21,7 +27,16 @@ const Login = () => {
                     completedQuestions: [],
                     isPlaying: false
                 });
-                navigate('/quiz');
+
+                // Lưu thông tin người dùng vào sessionStorage
+                sessionStorage.setItem('currentPlayer', JSON.stringify({ username, role }));
+
+                // Chuyển hướng dựa trên role
+                if (role === 'admin') {
+                    navigate('/admin');
+                } else {
+                    navigate('/quiz');
+                }
             } catch (error) {
                 console.error('Error logging in:', error);
                 setError('Đã có lỗi xảy ra. Vui lòng thử lại.');

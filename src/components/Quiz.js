@@ -27,26 +27,33 @@ const Quiz = () => {
             navigate('/');
             return;
         }
-        setUsername(currentPlayer);
 
-        // Initialize player status
-        const playerRef = ref(db, `players/${currentPlayer}`);
-        set(playerRef, {
-            score: 0,
-            completedQuestions: [],
-            currentQuestion: 1,
-            isPlaying: true,
-            timestamp: Date.now(),
-            stories: {}
-        }).catch(error => {
-            console.error('Error initializing player status:', error);
-        });
+        try {
+            const playerData = JSON.parse(currentPlayer);
+            setUsername(playerData.username);
 
-        // Select random questions
-        const allQuestions = questionsData.questions;
-        const shuffledQuestions = [...allQuestions].sort(() => Math.random() - 0.5);
-        const selectedQuestions = shuffledQuestions.slice(0, 10);
-        setQuestions(selectedQuestions);
+            // Initialize player status
+            const playerRef = ref(db, `players/${playerData.username}`);
+            set(playerRef, {
+                score: 0,
+                completedQuestions: [],
+                currentQuestion: 1,
+                isPlaying: true,
+                timestamp: Date.now(),
+                stories: {}
+            }).catch(error => {
+                console.error('Error initializing player status:', error);
+            });
+
+            // Select random questions
+            const allQuestions = questionsData.questions;
+            const shuffledQuestions = [...allQuestions].sort(() => Math.random() - 0.5);
+            const selectedQuestions = shuffledQuestions.slice(0, 10);
+            setQuestions(selectedQuestions);
+        } catch (error) {
+            console.error('Error parsing player data:', error);
+            navigate('/');
+        }
     }, [navigate]);
 
     // Timer effect

@@ -9,6 +9,25 @@ const Admin = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        // Kiểm tra thông tin người dùng
+        const currentPlayer = sessionStorage.getItem('currentPlayer');
+        if (!currentPlayer) {
+            navigate('/');
+            return;
+        }
+
+        try {
+            const playerData = JSON.parse(currentPlayer);
+            if (playerData.role !== 'admin') {
+                navigate('/');
+                return;
+            }
+        } catch (error) {
+            console.error('Error parsing player data:', error);
+            navigate('/');
+            return;
+        }
+
         const playersRef = ref(db, 'players');
 
         // Set up real-time listener
