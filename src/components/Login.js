@@ -21,7 +21,7 @@ const Login = () => {
                     completedQuestions: [],
                     isPlaying: false
                 });
-                navigate('/#/quiz');
+                navigate('/quiz');
             } catch (error) {
                 console.error('Error logging in:', error);
                 setError('Đã có lỗi xảy ra. Vui lòng thử lại.');

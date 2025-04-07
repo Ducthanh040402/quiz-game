@@ -47,7 +47,7 @@ const Admin = () => {
 
     const handleLogout = () => {
         sessionStorage.removeItem('currentPlayer');
-        navigate('/#/');
+        navigate('/');
     };
 
     if (loading) {

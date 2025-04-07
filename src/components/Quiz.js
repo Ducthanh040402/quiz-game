@@ -202,12 +202,12 @@ const Quiz = () => {
         setShowStoryInput(false);
         setTimeLeft(20);
         setTimerActive(true);
-        navigate('/#/quiz');
+        navigate('/quiz');
     };
 
     const handleLogout = () => {
         sessionStorage.removeItem('currentPlayer');
-        navigate('/#/');
+        navigate('/');
     };
 
     if (!username || questions.length === 0) {
