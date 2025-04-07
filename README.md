@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Quiz Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Một ứng dụng quiz game đơn giản sử dụng React và Firebase.
 
-## Available Scripts
+## Tính năng
 
-In the project directory, you can run:
+- Đăng nhập với tên người dùng
+- Trả lời câu hỏi với thời gian giới hạn
+- Hiệu ứng thời tiết khi trả lời đúng
+- Chia sẻ câu chuyện khi trả lời sai
+- Theo dõi điểm số và xếp hạng
+- Hiển thị hình ảnh gợi ý dần dần
 
-### `npm start`
+## Cài đặt
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone repository:
+```bash
+git clone [your-repository-url]
+cd quiz-game
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Cài đặt dependencies:
+```bash
+npm install
+```
 
-### `npm test`
+3. Tạo file `.env` trong thư mục gốc với nội dung:
+```
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Chạy ứng dụng:
+```bash
+npm start
+```
 
-### `npm run build`
+## Cấu trúc thư mục
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+quiz-game/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Admin.js
+│   │   ├── Login.js
+│   │   ├── Quiz.js
+│   │   ├── WeatherEffect.js
+│   │   └── firebase.js
+│   ├── data/
+│   │   └── questions.json
+│   ├── styles/
+│   │   ├── index.css
+│   │   ├── quiz.css
+│   │   └── weather.css
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Công nghệ sử dụng
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- Firebase (Authentication, Realtime Database)
+- TailwindCSS
+- CSS3 Animations
 
-### `npm run eject`
+## Deploy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Build ứng dụng:
+```bash
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Deploy lên Firebase:
+```bash
+firebase deploy
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Giấy phép
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
