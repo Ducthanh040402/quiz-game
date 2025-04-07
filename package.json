@@ -2,7 +2,7 @@
   "name": "quiz-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ducthanh040402.github.io/quiz-game/",
+  "homepage": "https://Ducthanh040402.github.io/quiz-game",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -42,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.3.0"
   }
 }
