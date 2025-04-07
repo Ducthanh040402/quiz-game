@@ -7,7 +7,7 @@ import './styles/index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/quiz-game">
       <div className="App">
         <Routes>
           <Route path="/" element={<Login />} />
